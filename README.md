@@ -9,11 +9,11 @@
  
 ## 📌 Problem Statement
  
-Generic AI assistants answer travel questions using broad, unverified model knowledge. Concierge AI solves this by grounding every response in a curated destination knowledge base — ensuring responses are accurate, scoped, and trustworthy.
+Generic AI assistants answer travel questions using broad, unverified model knowledge. Concierge AI solves this by grounding every response in a curated destination knowledge base, ensuring responses are accurate, scoped, and trustworthy.
  
 ## 💡 Value Proposition
  
-A travel concierge that only tells you what it actually knows — and refuses to make the rest up.
+A travel concierge that only tells you what it actually knows, and refuses to make the rest up.
  
 ---
 
