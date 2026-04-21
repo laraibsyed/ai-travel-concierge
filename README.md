@@ -3,6 +3,7 @@
 > A conversational travel planning assistant grounded in real destination data, built with Retrieval-Augmented Generation (RAG) and deployed on Vercel.
  
 🌐 **Live Demo**: [ai-travel-concierge-orpin.vercel.app](https://ai-travel-concierge-orpin.vercel.app/)
+👵 **Grandma Markdown**: [GRANDMA.md](./GRANDMA.md)
  
 ---
  
