@@ -12,6 +12,11 @@ import {
   CityData,
 } from "@/lib/retrieval";
 
+interface ConversationTurn {
+  role: "user" | "assistant";
+  content: string;
+}
+
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
@@ -45,11 +50,25 @@ const tracedLLMCall = traceable(
 
 // Top-level traced pipeline — wraps the whole flow so LangSmith shows user input → output
 const tracedPipeline = traceable(
-  async (message: string, budget: BudgetLevel) => {
+  async (message: string, budget: BudgetLevel, conversationHistory: ConversationTurn[]) => {
     // ── STEP 1: RAG RETRIEVAL ──────────────────────────────────────────────
     const { cities, context } = await tracedRetrieve(message, budget);
 
     // ── STEP 2: PROMPT CONSTRUCTION ───────────────────────────────────────
+    // If there's a previous itinerary in the conversation, enter refinement mode.
+    const previousItinerary = [...conversationHistory]
+      .reverse()
+      .find((m) => m.role === "assistant")?.content;
+
+    const refinementBlock = previousItinerary
+      ? `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REFINEMENT MODE — PREVIOUS ITINERARY:
+${previousItinerary}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The user wants to refine the itinerary above. Apply their changes while keeping the same destination and overall structure. Only change what they ask for.`
+      : "";
+
     const systemPrompt = `You are an expert AI Travel Concierge. Your job is to create detailed, practical travel itineraries.
 
 IMPORTANT RULES:
@@ -74,7 +93,7 @@ End with a 💡 Quick Tips section (3-4 bullet points).
 ═══════════════════════════════
 RETRIEVED DESTINATION DATA (RAG Context):
 ${context}
-═══════════════════════════════`;
+═══════════════════════════════${refinementBlock}`;
 
     // ── STEP 3: LLM GENERATION via GROQ ──────────────────────────────────
     const response = await tracedLLMCall(systemPrompt, message);
@@ -86,7 +105,7 @@ ${context}
 
 export async function POST(req: NextRequest) {
   try {
-    const { message, budget = "any" } = await req.json();
+    const { message, budget = "any", conversationHistory = [] } = await req.json();
 
     if (!message || typeof message !== "string") {
       return NextResponse.json(
@@ -95,13 +114,18 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { response, citiesRetrieved } = await tracedPipeline(message, budget as BudgetLevel);
+    const { response, citiesRetrieved } = await tracedPipeline(
+      message,
+      budget as BudgetLevel,
+      conversationHistory as ConversationTurn[]
+    );
 
     return NextResponse.json({
       response,
       debug: {
         citiesRetrieved,
         budget,
+        isRefinement: conversationHistory.some((m: ConversationTurn) => m.role === "assistant"),
       },
     });
   } catch (error: unknown) {
