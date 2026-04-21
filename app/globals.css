@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1a1410;
+  --parchment: #fdf8f0;
+  --sand-100: #f9edd8;
+  --sand-300: #e8be80;
+  --sand-500: #d4862e;
+  --ocean-500: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--parchment);
+  color: var(--ink);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--sand-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sand-300);
+  border-radius: 3px;
+}
+
+/* Message markdown-like formatting */
+.message-content strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.message-content p {
+  margin-bottom: 0.5rem;
+}
+
+/* Shimmer loading effect */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #f9edd8 25%,
+    #f2d9b0 50%,
+    #f9edd8 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Fade up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.35s ease-out forwards;
+}
+
+/* Textarea auto-height helper */
+textarea {
+  field-sizing: content;
+}

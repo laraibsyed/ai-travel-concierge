@@ -1,0 +1,230 @@
+[
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "budgets": {
+      "low": "AED 200-400/day",
+      "mid": "AED 500-900/day",
+      "luxury": "AED 1500+/day"
+    },
+    "attractions": [
+      { "name": "Burj Khalifa Observation Deck", "type": "landmark", "cost": "mid", "time": "2 hours", "area": "Downtown" },
+      { "name": "Dubai Mall & Aquarium", "type": "shopping/leisure", "cost": "low", "time": "3 hours", "area": "Downtown" },
+      { "name": "Dubai Creek & Old Souk", "type": "culture", "cost": "low", "time": "2 hours", "area": "Deira" },
+      { "name": "Jumeirah Beach", "type": "nature", "cost": "free", "time": "half day", "area": "Jumeirah" },
+      { "name": "Desert Safari", "type": "adventure", "cost": "mid", "time": "full evening", "area": "Outskirts" },
+      { "name": "Palm Jumeirah & Atlantis", "type": "landmark", "cost": "mid", "time": "2 hours", "area": "Palm" },
+      { "name": "Dubai Frame", "type": "landmark", "cost": "low", "time": "1.5 hours", "area": "Zabeel" },
+      { "name": "Global Village", "type": "culture", "cost": "low", "time": "3 hours", "area": "Dubailand" }
+    ],
+    "food": [
+      { "name": "Al Ustad Special Kabab", "type": "local", "cost": "low", "area": "Deira" },
+      { "name": "Ravi Restaurant", "type": "Pakistani/local", "cost": "low", "area": "Satwa" },
+      { "name": "Zuma Dubai", "type": "Japanese", "cost": "luxury", "area": "DIFC" },
+      { "name": "Bu Qtair", "type": "seafood", "cost": "low", "area": "Umm Suqeim" },
+      { "name": "Nobu Dubai", "type": "fusion", "cost": "luxury", "area": "Atlantis" }
+    ],
+    "tips": [
+      "Metro is cheap and covers most tourist spots",
+      "Book Burj Khalifa tickets in advance to save money",
+      "Dress modestly in souks and malls",
+      "Avoid outdoor activities midday in summer",
+      "Taxis are metered and generally safe"
+    ]
+  },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "budgets": {
+      "low": "¥5000-8000/day",
+      "mid": "¥12000-20000/day",
+      "luxury": "¥40000+/day"
+    },
+    "attractions": [
+      { "name": "Senso-ji Temple", "type": "culture", "cost": "free", "time": "2 hours", "area": "Asakusa" },
+      { "name": "Shibuya Crossing & Harajuku", "type": "culture", "cost": "free", "time": "3 hours", "area": "Shibuya" },
+      { "name": "Shinjuku Gyoen Garden", "type": "nature", "cost": "low", "time": "2 hours", "area": "Shinjuku" },
+      { "name": "teamLab Planets", "type": "art/tech", "cost": "mid", "time": "2 hours", "area": "Toyosu" },
+      { "name": "Akihabara Electric Town", "type": "culture", "cost": "low", "time": "3 hours", "area": "Akihabara" },
+      { "name": "Tokyo Skytree", "type": "landmark", "cost": "mid", "time": "2 hours", "area": "Asakusa" },
+      { "name": "Ueno Park & Museums", "type": "nature/culture", "cost": "low", "time": "half day", "area": "Ueno" },
+      { "name": "Odaiba Island", "type": "leisure", "cost": "low", "time": "3 hours", "area": "Odaiba" }
+    ],
+    "food": [
+      { "name": "Tsukiji Outer Market", "type": "seafood/breakfast", "cost": "low", "area": "Tsukiji" },
+      { "name": "Ichiran Ramen", "type": "ramen", "cost": "low", "area": "Multiple locations" },
+      { "name": "Depachika (department store basement food halls)", "type": "variety", "cost": "low-mid", "area": "Shinjuku/Shibuya" },
+      { "name": "Sukiyabashi Jiro (advance reservation)", "type": "sushi", "cost": "luxury", "area": "Ginza" },
+      { "name": "Standing sushi bars", "type": "sushi", "cost": "low", "area": "Around train stations" }
+    ],
+    "tips": [
+      "Get a Suica or Pasmo IC card for seamless transit",
+      "Cash is still king at many local restaurants",
+      "Convenience stores (7-Eleven, Lawson) have great cheap food",
+      "Book popular restaurants weeks ahead",
+      "Many museums are free or cheap on certain days"
+    ]
+  },
+  {
+    "city": "Paris",
+    "country": "France",
+    "budgets": {
+      "low": "€60-90/day",
+      "mid": "€150-250/day",
+      "luxury": "€500+/day"
+    },
+    "attractions": [
+      { "name": "Eiffel Tower", "type": "landmark", "cost": "mid", "time": "2 hours", "area": "Champ de Mars" },
+      { "name": "Louvre Museum", "type": "culture", "cost": "mid", "time": "4 hours", "area": "1st arrondissement" },
+      { "name": "Montmartre & Sacré-Cœur", "type": "culture", "cost": "free", "time": "3 hours", "area": "18th arrondissement" },
+      { "name": "Notre-Dame Cathedral", "type": "landmark", "cost": "free", "time": "1.5 hours", "area": "Île de la Cité" },
+      { "name": "Musée d'Orsay", "type": "culture", "cost": "mid", "time": "3 hours", "area": "7th arrondissement" },
+      { "name": "Versailles Palace & Gardens", "type": "culture", "cost": "mid", "time": "full day", "area": "Versailles (day trip)" },
+      { "name": "Le Marais District", "type": "culture", "cost": "free", "time": "3 hours", "area": "3rd arrondissement" }
+    ],
+    "food": [
+      { "name": "Croissant & café au lait at a local boulangerie", "type": "breakfast", "cost": "low", "area": "Any neighbourhood" },
+      { "name": "L'As du Fallafel", "type": "street food", "cost": "low", "area": "Le Marais" },
+      { "name": "Septime", "type": "bistro", "cost": "luxury", "area": "11th arrondissement" },
+      { "name": "Bouillon Chartier", "type": "traditional French", "cost": "low", "area": "9th arrondissement" },
+      { "name": "Pierre Hermé macarons", "type": "patisserie", "cost": "mid", "area": "Multiple locations" }
+    ],
+    "tips": [
+      "Museum Pass saves money if visiting 3+ museums",
+      "Metro is efficient - buy a carnet of 10 tickets",
+      "Many museums are free on first Sunday of the month",
+      "Pickpocketing is common around Eiffel Tower",
+      "Restaurants serve dinner late - typically 7:30pm onwards"
+    ]
+  },
+  {
+    "city": "London",
+    "country": "United Kingdom",
+    "budgets": {
+      "low": "£60-80/day",
+      "mid": "£150-200/day",
+      "luxury": "£400+/day"
+    },
+    "attractions": [
+      { "name": "British Museum", "type": "culture", "cost": "free", "time": "3 hours", "area": "Bloomsbury" },
+      { "name": "Tower of London & Tower Bridge", "type": "landmark", "cost": "mid", "time": "3 hours", "area": "East London" },
+      { "name": "Buckingham Palace & St James's Park", "type": "landmark", "cost": "free", "time": "2 hours", "area": "Westminster" },
+      { "name": "Tate Modern", "type": "culture", "cost": "free", "time": "3 hours", "area": "Southwark" },
+      { "name": "Borough Market", "type": "food/culture", "cost": "low", "time": "2 hours", "area": "London Bridge" },
+      { "name": "Notting Hill & Portobello Road", "type": "culture", "cost": "free", "time": "2 hours", "area": "Notting Hill" },
+      { "name": "Hyde Park", "type": "nature", "cost": "free", "time": "2 hours", "area": "Kensington" },
+      { "name": "The Shard (view)", "type": "landmark", "cost": "mid", "time": "1.5 hours", "area": "Southwark" }
+    ],
+    "food": [
+      { "name": "Full English Breakfast at a local cafe", "type": "breakfast", "cost": "low", "area": "Anywhere" },
+      { "name": "Dishoom (Indian)", "type": "Indian", "cost": "mid", "area": "Covent Garden / Shoreditch" },
+      { "name": "Flat Iron (steak)", "type": "steak", "cost": "mid", "area": "Soho" },
+      { "name": "Bao Fitzrovia", "type": "Taiwanese", "cost": "mid", "area": "Fitzrovia" },
+      { "name": "Sketch", "type": "afternoon tea / fine dining", "cost": "luxury", "area": "Mayfair" }
+    ],
+    "tips": [
+      "Oyster card or contactless is the best way to use the Tube",
+      "Many world-class museums are completely free",
+      "Book popular restaurants and attractions ahead",
+      "Weather is unpredictable - always carry a layer",
+      "The Tube is expensive - walk between nearby zones when possible"
+    ]
+  },
+  {
+    "city": "New York",
+    "country": "USA",
+    "budgets": {
+      "low": "$80-120/day",
+      "mid": "$200-350/day",
+      "luxury": "$600+/day"
+    },
+    "attractions": [
+      { "name": "Central Park", "type": "nature", "cost": "free", "time": "3 hours", "area": "Midtown/Upper West Side" },
+      { "name": "Metropolitan Museum of Art", "type": "culture", "cost": "mid", "time": "4 hours", "area": "Upper East Side" },
+      { "name": "Brooklyn Bridge & DUMBO", "type": "landmark", "cost": "free", "time": "2 hours", "area": "Brooklyn" },
+      { "name": "The High Line", "type": "nature/culture", "cost": "free", "time": "2 hours", "area": "Chelsea" },
+      { "name": "Times Square", "type": "landmark", "cost": "free", "time": "1 hour", "area": "Midtown" },
+      { "name": "Statue of Liberty & Ellis Island", "type": "landmark", "cost": "mid", "time": "half day", "area": "Harbor" },
+      { "name": "Whitney Museum", "type": "culture", "cost": "mid", "time": "2 hours", "area": "Meatpacking" },
+      { "name": "Top of the Rock / One World Observatory", "type": "landmark", "cost": "mid", "time": "2 hours", "area": "Midtown" }
+    ],
+    "food": [
+      { "name": "Katz's Delicatessen", "type": "deli", "cost": "mid", "area": "Lower East Side" },
+      { "name": "Joe's Pizza", "type": "pizza", "cost": "low", "area": "Greenwich Village / Midtown" },
+      { "name": "Xi'an Famous Foods", "type": "Chinese noodles", "cost": "low", "area": "Multiple locations" },
+      { "name": "Gramercy Tavern", "type": "American fine dining", "cost": "luxury", "area": "Gramercy" },
+      { "name": "Smorgasburg food market", "type": "variety", "cost": "low-mid", "area": "Brooklyn (weekends)" }
+    ],
+    "tips": [
+      "Get a MetroCard or use OMNY contactless for subway",
+      "Jaywalking is normal and mostly fine",
+      "Tipping 18-20% is expected everywhere",
+      "Many free museum suggested donation days - check schedules",
+      "Walk between neighbourhoods - NYC is very walkable"
+    ]
+  },
+  {
+    "city": "Madrid",
+    "country": "Spain",
+    "budgets": {
+      "low": "€50-80/day",
+      "mid": "€120-200/day",
+      "luxury": "€400+/day"
+    },
+    "attractions": [
+      { "name": "Museo del Prado", "type": "culture", "cost": "mid", "time": "3 hours", "area": "Paseo del Prado" },
+      { "name": "Retiro Park & Crystal Palace", "type": "nature", "cost": "free", "time": "2 hours", "area": "Retiro" },
+      { "name": "Royal Palace of Madrid", "type": "landmark", "cost": "mid", "time": "2 hours", "area": "Palacio" },
+      { "name": "Mercado de San Miguel", "type": "food/culture", "cost": "low", "time": "1.5 hours", "area": "Centro" },
+      { "name": "Gran Vía", "type": "culture", "cost": "free", "time": "2 hours", "area": "Centro" },
+      { "name": "Reina Sofía Museum (Guernica)", "type": "culture", "cost": "mid", "time": "2.5 hours", "area": "Atocha" },
+      { "name": "El Rastro Flea Market (Sundays)", "type": "culture", "cost": "free", "time": "2 hours", "area": "La Latina" }
+    ],
+    "food": [
+      { "name": "Churros & chocolate at Chocolatería San Ginés", "type": "breakfast", "cost": "low", "area": "Centro" },
+      { "name": "Tapas bar crawl in La Latina", "type": "tapas", "cost": "low-mid", "area": "La Latina" },
+      { "name": "Sobrino de Botín (world's oldest restaurant)", "type": "traditional Spanish", "cost": "mid-luxury", "area": "Centro" },
+      { "name": "Mercado de la Paz", "type": "market/local", "cost": "low", "area": "Salamanca" },
+      { "name": "DiverXO (3 Michelin stars)", "type": "fine dining", "cost": "luxury", "area": "Chamartín" }
+    ],
+    "tips": [
+      "Lunch is the main meal - restaurants fill up 2-4pm",
+      "Dinner starts late - 9pm is normal, 10pm is common",
+      "Metro is cheap and covers the whole city",
+      "Many museums free on Sunday evenings",
+      "Siesta hours (2-5pm) mean some shops close"
+    ]
+  },
+  {
+    "city": "Baku",
+    "country": "Azerbaijan",
+    "budgets": {
+      "low": "AZN 30-50/day",
+      "mid": "AZN 80-150/day",
+      "luxury": "AZN 300+/day"
+    },
+    "attractions": [
+      { "name": "Old City (Icherisheher)", "type": "culture", "cost": "free", "time": "3 hours", "area": "Old Town" },
+      { "name": "Flame Towers (viewpoint)", "type": "landmark", "cost": "free", "time": "1 hour", "area": "Highland Park" },
+      { "name": "Heydar Aliyev Center", "type": "architecture/culture", "cost": "low", "time": "2 hours", "area": "Baku" },
+      { "name": "Baku Boulevard (National Park)", "type": "nature", "cost": "free", "time": "2 hours", "area": "Seafront" },
+      { "name": "Carpet Museum", "type": "culture", "cost": "low", "time": "1.5 hours", "area": "Baku Boulevard" },
+      { "name": "Nizami Street (pedestrian)", "type": "culture/shopping", "cost": "free", "time": "2 hours", "area": "Centro" },
+      { "name": "Gobustan National Park (day trip)", "type": "nature", "cost": "low", "time": "half day", "area": "Outskirts" }
+    ],
+    "food": [
+      { "name": "Mangal (Azerbaijani BBQ) in Old City", "type": "BBQ/local", "cost": "low", "area": "Old Town" },
+      { "name": "Fisincan Restaurant", "type": "traditional Azerbaijani", "cost": "mid", "area": "Baku" },
+      { "name": "Çay (tea) at a local çayxana", "type": "café", "cost": "low", "area": "Any neighbourhood" },
+      { "name": "Dolma, plov, and kebab at local eateries", "type": "local cuisine", "cost": "low", "area": "Old City" },
+      { "name": "Park Inn Baku restaurant", "type": "international", "cost": "mid-luxury", "area": "Baku" }
+    ],
+    "tips": [
+      "Very affordable compared to most European cities",
+      "Taxis are cheap - use Bolt app",
+      "Old City is compact and very walkable",
+      "Flame Towers look best at night",
+      "Locals are friendly and often speak some English"
+    ]
+  }
+]
